@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Reasonance Labs — AI, Science &amp; Robotics Projects</title>
+  <meta name="description" content="Independent lab by Emil Jivishov building tools for AI-powered learning, chemistry simulation, and robotics. Where reasoning meets resonance.">
+  <link rel="canonical" href="https://reasonance-lab.github.io/">
+
+  <meta property="og:title" content="Reasonance Labs">
+  <meta property="og:description" content="An independent build lab: AI-powered learning, chemistry simulation, robotics. Where reasoning meets resonance.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://reasonance-lab.github.io/">
+  <meta property="og:image" content="https://reasonance-lab.github.io/assets/og-image.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Reasonance Labs">
+  <meta name="twitter:description" content="An independent build lab: AI-powered learning, chemistry simulation, robotics.">
+  <meta name="twitter:image" content="https://reasonance-lab.github.io/assets/og-image.png">
+
+  <meta name="theme-color" content="#0a0e17" media="(prefers-color-scheme: dark)">
+  <meta name="theme-color" content="#eef1f7" media="(prefers-color-scheme: light)">
+  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+  <link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
+
+  <link rel="preload" href="fonts/syne-var.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- shared gradient for every node mark on the page -->
+  <svg width="0" height="0" style="position:absolute" aria-hidden="true">
+    <defs>
+      <linearGradient id="nodeGrad" x1="0" y1="0" x2="1" y2="1">
+        <stop offset="0" stop-color="#38e1ff"/>
+        <stop offset="1" stop-color="#8b5cf6"/>
+      </linearGradient>
+    </defs>
+  </svg>
+
+  <nav class="nav">
+    <a class="nav-brand" href="#top">
+      <svg viewBox="0 0 100 100" aria-hidden="true">
+        <circle cx="50" cy="50" r="42" fill="none" stroke="url(#nodeGrad)" stroke-width="6" opacity=".45"/>
+        <circle cx="50" cy="50" r="26" fill="none" stroke="url(#nodeGrad)" stroke-width="6" opacity=".75"/>
+        <circle cx="50" cy="50" r="11" fill="url(#nodeGrad)"/>
+      </svg>
+      reasonance labs
+    </a>
+    <div class="nav-links">
+      <a href="#ai-learning">01 / ai</a>
+      <a href="#chem-sci">02 / chem</a>
+      <a href="#robotics">03 / robotics</a>
+      <a href="#devtools">04 / tools</a>
+      <a class="gh" href="https://github.com/reasonance-lab" target="_blank" rel="noopener">github ↗</a>
+    </div>
+  </nav>
+
+  <header class="hero" id="top">
+    <canvas id="waves" aria-hidden="true"></canvas>
+    <div class="hero-content">
+      <p class="eyebrow">an independent build lab · <b>signal online</b></p>
+      <h1 class="wordmark" aria-label="Reasonance Labs">
+        <span aria-hidden="true">reas<span class="o-node"><svg viewBox="0 0 100 100">
+          <circle class="ring r1" cx="50" cy="50" r="32"/>
+          <circle class="ring r2" cx="50" cy="50" r="32"/>
+          <circle class="ring r3" cx="50" cy="50" r="32"/>
+          <circle class="core" cx="50" cy="50" r="15"/>
+        </svg></span>nance</span>
+        <span class="labs" aria-hidden="true">labs</span>
+      </h1>
+      <p class="hero-tagline">
+        Tools for AI-powered learning, chemistry and robotics —
+        built where <em>reasoning</em> meets <em>resonance</em>,
+        shipped when they ring true.
+      </p>
+      <div class="hero-chips">
+        <a class="chip" style="--hue:190" href="#ai-learning"><b>01</b>ai &amp; learning</a>
+        <a class="chip" style="--hue:150" href="#chem-sci"><b>02</b>chemistry &amp; science</a>
+        <a class="chip" style="--hue:268" href="#robotics"><b>03</b>robotics &amp; hardware</a>
+        <a class="chip" style="--hue:30" href="#devtools"><b>04</b>developer tools</a>
+      </div>
+    </div>
+    <span class="scroll-cue" aria-hidden="true">scroll</span>
+  </header>
+
+  <main>
+
+    <section id="ai-learning" class="domain" style="--hue:190">
+      <header class="domain-head reveal">
+        <span class="idx" aria-hidden="true">01</span>
+        <div>
+          <h2>AI &amp; Learning</h2>
+          <p class="blurb">Adaptive tutoring, collaborative reasoning, classrooms with more signal.</p>
+        </div>
+        <span class="freq" aria-hidden="true">∿ 190°</span>
+      </header>
+      <div class="grid" data-domain="ai-learning"></div>
+      <noscript>
+        <ul class="nojs-list">
+          <li><a href="https://github.com/reasonance-lab/reasonance" rel="noopener">Reasonance</a> — collaborative AI reasoning platform</li>
+          <li>Adaptive Learning Atlas — private local STEM tutor</li>
+          <li><a href="https://teacheraide.fly.dev" rel="noopener">TeacherAide</a> — AI assessment generator for educators</li>
+        </ul>
+      </noscript>
+    </section>
+
+    <section id="chem-sci" class="domain" style="--hue:150">
+      <header class="domain-head reveal">
+        <span class="idx" aria-hidden="true">02</span>
+        <div>
+          <h2>Chemistry &amp; Science</h2>
+          <p class="blurb">Simulations, virtual labs and analysis tools you can poke.</p>
+        </div>
+        <span class="freq" aria-hidden="true">∿ 150°</span>
+      </header>
+      <div class="grid" data-domain="chem-sci"></div>
+      <noscript>
+        <ul class="nojs-list">
+          <li>Lab Studio — browser-based chemistry lab authoring</li>
+          <li>Texas Chemistry Simulators — TEKS-aligned interactive sims</li>
+          <li>AssayLens — computer vision for assay readouts</li>
+        </ul>
+      </noscript>
+    </section>
+
+    <section id="robotics" class="domain" style="--hue:268">
+      <header class="domain-head reveal">
+        <span class="idx" aria-hidden="true">03</span>
+        <div>
+          <h2>Robotics &amp; Hardware</h2>
+          <p class="blurb">Arms, buddies, and browser-native control — no toolchain required.</p>
+        </div>
+        <span class="freq" aria-hidden="true">∿ 268°</span>
+      </header>
+      <div class="grid" data-domain="robotics"></div>
+      <noscript>
+        <ul class="nojs-list">
+          <li>RoboStudio — CAD, circuits and simulation workspace</li>
+          <li>xArm IDE — Web-Serial programming for the HiWonder xArm</li>
+          <li>RoboBuddy 3D — classroom robotic-arm companion</li>
+        </ul>
+      </noscript>
+    </section>
+
+    <section id="devtools" class="domain" style="--hue:30">
+      <header class="domain-head reveal">
+        <span class="idx" aria-hidden="true">04</span>
+        <div>
+          <h2>Developer Tools</h2>
+          <p class="blurb">The things that build the other things.</p>
+        </div>
+        <span class="freq" aria-hidden="true">∿ 30°</span>
+      </header>
+      <div class="grid" data-domain="devtools"></div>
+      <noscript>
+        <ul class="nojs-list">
+          <li>Conduit — multi-agent terminal for Claude Code + Codex</li>
+          <li>Audit.Pro — repeatable AI code-audit loops</li>
+        </ul>
+      </noscript>
+    </section>
+
+    <section class="about" id="about">
+      <div class="reveal">
+        <h2>About the lab</h2>
+        <p class="etymology">
+          <span class="word">reasonance</span> <span class="phon">/ˌriː.zəˈnɑːns/</span> — <i>n.</i>
+          the amplification an idea gains when reasoning is iterated until it rings true.
+          One person, many domains: education, chemistry, robotics, and the tools in between.
+        </p>
+      </div>
+      <div class="reveal">
+        <h2>Get in touch</h2>
+        <p class="etymology">Questions, collaborations, or a demo of anything still in the lab:</p>
+        <div class="contact-row">
+          <button class="btn" id="copy-email" data-email="emil.jivishov@gmail.com" title="Copy email">emil.jivishov@gmail.com</button>
+          <a class="btn" href="https://github.com/reasonance-lab" target="_blank" rel="noopener">github ↗</a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="colophon">
+    <span>© <span id="year">2026</span> reasonance labs</span>
+    <span>built by hand — no framework, no tracker</span>
+    <span><a href="https://github.com/reasonance-lab/reasonance-lab.github.io" rel="noopener">view source ↗</a></span>
+  </footer>
+
+  <script src="js/projects.data.js" defer></script>
+  <script src="js/main.js" defer></script>
+  <script src="js/waves.js" defer></script>
+</body>
+</html>
