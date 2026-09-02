@@ -30,3 +30,10 @@
   -webkit-line-clamp: unset;
   -webkit-box-orient: initial;
 }
+
+/* Keep section headings close to the fixed navigation bar. The original
+   responsive top padding was clamp(4rem, 9vw, 7rem); this is 20% of that
+   spacing while preserving the existing bottom padding and card spacing. */
+.domain {
+  padding-top: clamp(0.8rem, 1.8vw, 1.4rem);
+}
