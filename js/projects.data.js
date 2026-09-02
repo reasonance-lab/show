@@ -1,13 +1,13 @@
 /* ============================================================
-   Reasonance Labs — content file.
-   THIS is the file to edit when adding/removing projects.
+   Reasonance Lab — project content.
+   Edit this file when adding, removing, or updating project cards.
 
    Each project:
    {
      id:          "kebab-slug",            // unique, used as DOM id
      name:        "Display Name",
-     tagline:     "One clear line shown under the name",
-     description: "Concise explanation of what the project does and, where relevant, its WebMCP status.",
+     tagline:     "Short description of the project's purpose",
+     description: "Clear explanation of what the project does and, where relevant, its WebMCP status.",
      domain:      "ai-learning" | "chem-sci" | "robotics" | "devtools",
                   // must match a <section id="..."> in index.html
      status:      "live" | "beta" | "wip" | "archived",
@@ -28,9 +28,9 @@ const PROJECTS = [
   {
     id: "reasonance",
     name: "Reasonance",
-    tagline: "Two models argue. One truth resonates.",
+    tagline: "Collaborative reasoning across multiple AI models.",
     description:
-      "A collaborative reasoning platform where Claude and GPT critique each other's answers and iterate until their conclusions converge.",
+      "A multi-model reasoning platform where Claude and GPT evaluate each other's responses and iteratively refine a shared answer.",
     domain: "ai-learning",
     status: "live",
     links: { repo: "https://github.com/reasonance-lab/reasonance" },
@@ -40,9 +40,9 @@ const PROJECTS = [
   {
     id: "adaptive-learning-atlas",
     name: "Adaptive Learning Atlas",
-    tagline: "A private STEM tutor that maps what you know.",
+    tagline: "A local-first adaptive tutor for STEM subjects.",
     description:
-      "Local-first, bring-your-own-key tutoring environment for math, physics, chemistry and biology — it charts your knowledge and adapts every lesson.",
+      "A bring-your-own-key tutoring environment for mathematics, physics, chemistry, and biology that tracks learner progress and adapts instructional content.",
     domain: "ai-learning",
     status: "wip",
     links: {},
@@ -51,9 +51,9 @@ const PROJECTS = [
   {
     id: "teacheraide",
     name: "TeacherAide",
-    tagline: "Turn source material into LMS-ready assessments.",
+    tagline: "Generate, review, export, and publish assessments from source material.",
     description:
-      "Upload PDFs or images, generate and edit seven question types with OpenAI, Claude or Gemini, then export QTI 2.2/Word or publish to students. WebMCP: not currently enabled.",
+      "Teachers can upload PDFs or images, generate seven question types with OpenAI, Claude, or Gemini, review the results, and export QTI 2.2 or Word files or publish assessments to students. WebMCP is not currently enabled.",
     domain: "ai-learning",
     status: "live",
     links: {
@@ -68,9 +68,9 @@ const PROJECTS = [
   {
     id: "lab-studio-webmcp",
     name: "Lab Studio WebMCP",
-    tagline: "Teacher + agent pre-lab authoring with human approval.",
+    tagline: "Agent-assisted chemistry pre-lab authoring with teacher review.",
     description:
-      "Build and validate a bounded 45-minute titration pre-lab, rehearse it in the student simulator, and run protocol checks. WebMCP exposes inventory, staging, rehearsal and validation tools; Apply/Discard stay teacher-only.",
+      "A chemistry authoring and rehearsal environment for a supported titration workflow. WebMCP tools let an agent inspect inventory, stage a pre-lab, rehearse the procedure, and run protocol checks while final Apply or Discard decisions remain with the teacher.",
     domain: "chem-sci",
     status: "live",
     links: {
@@ -84,9 +84,9 @@ const PROJECTS = [
   {
     id: "chemistry-case-files",
     name: "Chemistry Case Files",
-    tagline: "Texas chemistry taught as evidence-driven investigations.",
+    tagline: "Interactive Texas high-school chemistry organized around investigations and applications.",
     description:
-      "An 11-unit Grade 10 TEKS-aligned course with interactive investigations, models, calculations, authentic Case Files and optional Honors extensions. WebMCP: not currently enabled.",
+      "An 11-unit Grade 10 TEKS-aligned chemistry course with interactive investigations, models, calculations, real-world case studies, and optional Honors extensions. WebMCP is not currently enabled.",
     domain: "chem-sci",
     status: "live",
     links: {
@@ -99,9 +99,9 @@ const PROJECTS = [
   {
     id: "assaylens",
     name: "AssayLens",
-    tagline: "Image-based XTT and agar assay analysis with built-in QC.",
+    tagline: "Browser-based image analysis for XTT plates and agar spot assays.",
     description:
-      "Analyze XTT 96-well plate photos and agar endpoint spot assays in the browser. WebMCP can inspect and configure the XTT workflow, run analysis and focus QC. Results are exploratory image-derived measurements, not calibrated absorbance or validated MIC.",
+      "AssayLens analyzes photographs of XTT 96-well plates and agar endpoint spot assays. Its WebMCP tools can inspect and configure the XTT workflow, run the existing analysis, and focus results that need human QC. Outputs are exploratory image-derived measurements, not calibrated absorbance or validated MIC values.",
     domain: "chem-sci",
     status: "live",
     links: {
@@ -115,9 +115,9 @@ const PROJECTS = [
   {
     id: "virtual-laboratory",
     name: "Virtual Laboratory",
-    tagline: "Browser-based science labs for pre-lab practice.",
+    tagline: "Multilingual virtual science experiments and simulations for learning and pre-lab practice.",
     description:
-      "A multilingual collection of interactive virtual experiments and simulations spanning spectrophotometry, genetics, gas laws, lab safety and more. Platform-level WebMCP is not currently enabled; the WebMCP Lab Studio build is listed separately.",
+      "A browser-based collection of virtual experiments and simulations covering topics such as spectrophotometry, genetics, gas laws, and laboratory safety. The main platform does not currently expose WebMCP tools; the separate Lab Studio WebMCP project does.",
     domain: "chem-sci",
     status: "live",
     links: {
@@ -132,9 +132,9 @@ const PROJECTS = [
   {
     id: "robostudio",
     name: "RoboStudio",
-    tagline: "Design, wire and test robotics projects before hardware.",
+    tagline: "Browser tools for robotics design, electronics, circuits, and simulation.",
     description:
-      "Five browser workspaces cover STL assembly, robotic component design, physics, ESP32 electronics and breadboard circuits, with a Lab mode for checkpoints and evidence export. WebMCP: not currently enabled.",
+      "RoboStudio combines STL assembly, robotic component design, physics simulation, ESP32 electronics, and breadboard circuit workflows. Its Lab mode also supports structured exercises, checkpoints, and evidence export. WebMCP is not currently enabled.",
     domain: "robotics",
     status: "live",
     links: {
@@ -147,9 +147,9 @@ const PROJECTS = [
   {
     id: "robobuddy-ide",
     name: "RoboBuddy IDE",
-    tagline: "Write robot-facing Python beside an immediate 3D simulation.",
+    tagline: "Python programming and 3D simulation for educational robotics workflows.",
     description:
-      "A VS Code-inspired browser IDE for SO-101, OpenArm, LeKiwi, Unitree G1 and MicroDuck learning workflows. WebMCP Agent Assist exposes bounded task, workspace and simulation inspection plus run/focus tools — without source writing or hardware control.",
+      "A VS Code-inspired browser IDE for programming and inspecting SO-101, OpenArm, LeKiwi, Unitree G1, and MicroDuck learning scenarios. WebMCP Agent Assist provides bounded task, workspace, and simulation inspection plus run and focus tools; it does not write source code or control physical hardware.",
     domain: "robotics",
     status: "live",
     links: {
@@ -165,9 +165,9 @@ const PROJECTS = [
   {
     id: "conduit",
     name: "Conduit",
-    tagline: "Claude Code and Codex, side by side.",
+    tagline: "A terminal interface for coordinating multiple coding agents.",
     description:
-      "A terminal UI that orchestrates two coding agents in parallel and lets them check each other's work.",
+      "An experimental terminal UI that runs two coding agents in parallel and provides a shared workflow for comparing and reviewing their output.",
     domain: "devtools",
     status: "wip",
     links: {},
@@ -176,9 +176,9 @@ const PROJECTS = [
   {
     id: "audit-pro",
     name: "Audit.Pro",
-    tagline: "Code audits on a loop.",
+    tagline: "Repeatable AI-assisted code auditing for software repositories.",
     description:
-      "Desktop app that runs repeatable, slow-burn AI code-audit passes over a repository and files what it finds.",
+      "A desktop prototype for running structured AI code-review passes over a repository and recording the findings for follow-up.",
     domain: "devtools",
     status: "wip",
     links: {},
