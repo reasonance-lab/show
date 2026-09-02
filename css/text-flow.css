@@ -37,3 +37,18 @@
 .domain {
   padding-top: clamp(0.8rem, 1.8vw, 1.4rem);
 }
+
+/* Normalize anchor positioning for all four domain sections. The base stylesheet
+   used a global scroll-padding offset, which made later sections land farther
+   below the fixed nav than the first section. Use the nav height as the single
+   offset so 01–04 align at the same vertical position when opened from the nav. */
+html {
+  scroll-padding-top: 0;
+}
+
+#ai-learning,
+#chem-sci,
+#robotics,
+#devtools {
+  scroll-margin-top: 3.4rem;
+}
