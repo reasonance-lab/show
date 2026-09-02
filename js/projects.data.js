@@ -64,6 +64,20 @@ const PROJECTS = [
     tech: ["Reflex", "Python", "QTI 2.2", "No WebMCP"],
     featured: true,
   },
+  {
+    id: "live-translator",
+    name: "Live Translator",
+    tagline: "Real-time speech translation with multiple AI providers.",
+    description:
+      "A browser and Windows desktop application that streams microphone or computer audio to OpenAI, Soniox, or Gemini and displays translated text in up to three target languages. A comparison mode can send the same audio to multiple providers for side-by-side evaluation. API keys stay in a local Node.js relay and are not exposed to the browser. WebMCP is not currently enabled.",
+    domain: "ai-learning",
+    status: "beta",
+    links: {
+      repo: "https://github.com/jivishov/live_translator",
+    },
+    tech: ["Electron", "Realtime AI", "WebSocket", "No WebMCP"],
+    featured: true,
+  },
 
   /* ---------- 02 · Chemistry & Science ---------- */
   {
