@@ -187,6 +187,7 @@ const PROJECTS = [
     status: "wip",
     links: {},
     tech: ["Python", "TUI"],
+    featured: true,
   },
   {
     id: "audit-pro",
@@ -198,5 +199,6 @@ const PROJECTS = [
     status: "wip",
     links: {},
     tech: ["Windows", "OpenAI Batch"],
+    featured: true,
   },
 ];
