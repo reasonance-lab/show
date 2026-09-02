@@ -47,6 +47,7 @@ const PROJECTS = [
     status: "wip",
     links: {},
     tech: ["TypeScript", "Node", "SQLite"],
+    featured: true,
   },
   {
     id: "teacheraide",
