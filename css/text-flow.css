@@ -1,0 +1,32 @@
+/* Natural text flow overrides.
+   Paragraphs and card copy use the full width of their containers and wrap only
+   at normal browser line-break opportunities. */
+
+.hero-content {
+  width: 100%;
+  max-width: none;
+}
+
+.hero-tagline,
+.domain-head .blurb,
+.card .tagline,
+.card .desc,
+.etymology {
+  white-space: normal;
+  word-break: normal;
+  overflow-wrap: normal;
+  hyphens: none;
+}
+
+.hero-tagline,
+.etymology {
+  width: 100%;
+  max-width: none;
+}
+
+.card .desc {
+  display: block;
+  overflow: visible;
+  -webkit-line-clamp: unset;
+  -webkit-box-orient: initial;
+}
