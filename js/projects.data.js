@@ -6,8 +6,8 @@
    {
      id:          "kebab-slug",            // unique, used as DOM id
      name:        "Display Name",
-     tagline:     "One catchy line shown under the name",
-     description: "One or two sentences. Keep it under ~180 chars.",
+     tagline:     "One clear line shown under the name",
+     description: "Concise explanation of what the project does and, where relevant, its WebMCP status.",
      domain:      "ai-learning" | "chem-sci" | "robotics" | "devtools",
                   // must match a <section id="..."> in index.html
      status:      "live" | "beta" | "wip" | "archived",
@@ -51,85 +51,114 @@ const PROJECTS = [
   {
     id: "teacheraide",
     name: "TeacherAide",
-    tagline: "Assessments that write themselves.",
+    tagline: "Turn source material into LMS-ready assessments.",
     description:
-      "AI assessment generator for educators — from learning objective to ready-to-print quiz in one pass.",
+      "Upload PDFs or images, generate and edit seven question types with OpenAI, Claude or Gemini, then export QTI 2.2/Word or publish to students. WebMCP: not currently enabled.",
     domain: "ai-learning",
     status: "live",
-    links: { live: "https://teacheraide.fly.dev" },
-    tech: ["Reflex", "Python"],
+    links: {
+      live: "https://teacheraide.fly.dev/",
+      repo: "https://github.com/jivishov/teacheraide",
+    },
+    tech: ["Reflex", "Python", "QTI 2.2", "No WebMCP"],
+    featured: true,
   },
 
   /* ---------- 02 · Chemistry & Science ---------- */
   {
-    id: "lab-studio",
-    name: "Lab Studio",
-    tagline: "Author interactive chemistry labs in the browser.",
+    id: "lab-studio-webmcp",
+    name: "Lab Studio WebMCP",
+    tagline: "Teacher + agent pre-lab authoring with human approval.",
     description:
-      "Client-side authoring platform for building and running interactive chemistry lab experiences — no server, no install.",
+      "Build and validate a bounded 45-minute titration pre-lab, rehearse it in the student simulator, and run protocol checks. WebMCP exposes inventory, staging, rehearsal and validation tools; Apply/Discard stay teacher-only.",
     domain: "chem-sci",
-    status: "beta",
-    links: {},
-    tech: ["React", "TypeScript", "Vite"],
+    status: "live",
+    links: {
+      live: "https://jivishov.github.io/Lab-Studio_WebMCP/",
+      repo: "https://github.com/jivishov/Lab-Studio_WebMCP",
+      docs: "https://github.com/jivishov/Lab-Studio_WebMCP#webmcp-tool-surfaces",
+    },
+    tech: ["React", "TypeScript", "WebMCP", "Vite"],
     featured: true,
   },
   {
-    id: "chem-simulators",
-    name: "Texas Chemistry Simulators",
-    tagline: "State-standard chemistry, fully interactive.",
+    id: "chemistry-case-files",
+    name: "Chemistry Case Files",
+    tagline: "Texas chemistry taught as evidence-driven investigations.",
     description:
-      "A collection of interactive high-school chemistry simulators aligned to the Texas standards — gas laws, equilibrium, stoichiometry and more.",
+      "An 11-unit Grade 10 TEKS-aligned course with interactive investigations, models, calculations, authentic Case Files and optional Honors extensions. WebMCP: not currently enabled.",
     domain: "chem-sci",
-    status: "beta",
-    links: {},
-    tech: ["Canvas", "JavaScript"],
+    status: "live",
+    links: {
+      live: "https://jivishov.github.io/chemistry-case-files/",
+      repo: "https://github.com/jivishov/chemistry-case-files",
+    },
+    tech: ["HTML", "Alpine.js", "TEKS", "No WebMCP"],
+    featured: true,
   },
   {
     id: "assaylens",
     name: "AssayLens",
-    tagline: "Computer vision for assay readouts.",
+    tagline: "Image-based XTT and agar assay analysis with built-in QC.",
     description:
-      "Point a camera at the plate; get structured results. Vision-assisted reading of laboratory assays.",
+      "Analyze XTT 96-well plate photos and agar endpoint spot assays in the browser. WebMCP can inspect and configure the XTT workflow, run analysis and focus QC. Results are exploratory image-derived measurements, not calibrated absorbance or validated MIC.",
     domain: "chem-sci",
-    status: "wip",
-    links: {},
-    tech: ["Vision", "JavaScript"],
+    status: "live",
+    links: {
+      live: "https://jivishov.github.io/assaylens/",
+      repo: "https://github.com/jivishov/assaylens",
+      docs: "https://github.com/jivishov/assaylens/blob/main/docs/WEBMCP.md",
+    },
+    tech: ["React", "Vision", "WebMCP", "XTT"],
+    featured: true,
+  },
+  {
+    id: "virtual-laboratory",
+    name: "Virtual Laboratory",
+    tagline: "Browser-based science labs for pre-lab practice.",
+    description:
+      "A multilingual collection of interactive virtual experiments and simulations spanning spectrophotometry, genetics, gas laws, lab safety and more. Platform-level WebMCP is not currently enabled; the WebMCP Lab Studio build is listed separately.",
+    domain: "chem-sci",
+    status: "live",
+    links: {
+      live: "https://virtuallab.az/",
+      repo: "https://github.com/jivishov/virtual_lab",
+    },
+    tech: ["HTML/CSS/JS", "Multilingual", "Pre-lab", "No WebMCP"],
+    featured: true,
   },
 
   /* ---------- 03 · Robotics & Hardware ---------- */
   {
     id: "robostudio",
     name: "RoboStudio",
-    tagline: "CAD, circuits and simulation in one workspace.",
+    tagline: "Design, wire and test robotics projects before hardware.",
     description:
-      "A browser workspace for robotics builds: model the mechanics, wire the electronics, simulate the result — before touching hardware.",
+      "Five browser workspaces cover STL assembly, robotic component design, physics, ESP32 electronics and breadboard circuits, with a Lab mode for checkpoints and evidence export. WebMCP: not currently enabled.",
     domain: "robotics",
-    status: "beta",
-    links: {},
-    tech: ["Vite", "Three.js"],
+    status: "live",
+    links: {
+      live: "https://jivishov.github.io/RoboStudio/",
+      repo: "https://github.com/jivishov/RoboStudio",
+    },
+    tech: ["Vite", "Three.js", "ESP32", "No WebMCP"],
     featured: true,
   },
   {
-    id: "xarm-ide",
-    name: "xArm IDE",
-    tagline: "Program a robotic arm straight from the browser.",
+    id: "robobuddy-ide",
+    name: "RoboBuddy IDE",
+    tagline: "Write robot-facing Python beside an immediate 3D simulation.",
     description:
-      "Web-Serial programming environment for the HiWonder xArm — write, flash and drive the arm with zero installed toolchain.",
+      "A VS Code-inspired browser IDE for SO-101, OpenArm, LeKiwi, Unitree G1 and MicroDuck learning workflows. WebMCP Agent Assist exposes bounded task, workspace and simulation inspection plus run/focus tools — without source writing or hardware control.",
     domain: "robotics",
-    status: "beta",
-    links: {},
-    tech: ["Web Serial", "JavaScript"],
-  },
-  {
-    id: "robobuddy",
-    name: "RoboBuddy 3D",
-    tagline: "A friendly face for classroom robotics.",
-    description:
-      "3D robotic-arm companion built for classrooms — approachable controls on top of real hardware.",
-    domain: "robotics",
-    status: "beta",
-    links: {},
-    tech: ["Three.js"],
+    status: "live",
+    links: {
+      live: "https://jivishov.github.io/RoboBuddy_IDE/",
+      repo: "https://github.com/jivishov/RoboBuddy_IDE",
+      docs: "https://github.com/jivishov/RoboBuddy_IDE#webmcp-agent-collaboration",
+    },
+    tech: ["Python", "Three.js", "Pyodide", "WebMCP"],
+    featured: true,
   },
 
   /* ---------- 04 · Developer Tools ---------- */
