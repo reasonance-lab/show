@@ -147,24 +147,24 @@ const PROJECTS = [
   {
     id: "robostudio",
     name: "RoboStudio",
-    tagline: "Browser tools for robotics design, electronics, circuits, and simulation.",
+    tagline: "Browser tools for robotics design, electronics, circuits, simulation, and agent-assisted workflows.",
     description:
-      "RoboStudio combines STL assembly, robotic component design, physics simulation, ESP32 electronics, and breadboard circuit workflows. Its Lab mode also supports structured exercises, checkpoints, and evidence export. WebMCP is not currently enabled.",
+      "RoboStudio combines STL assembly, robotic component design, physics simulation, ESP32 electronics, and breadboard circuit workflows. Its Lab mode supports structured exercises, checkpoints, and evidence export. WebMCP is currently enabled for agent interaction with the circuit workspace, including registered circuit tools and bounded component-edit operations through the page's live application state.",
     domain: "robotics",
     status: "live",
     links: {
       live: "https://jivishov.github.io/RoboStudio/",
       repo: "https://github.com/jivishov/RoboStudio",
     },
-    tech: ["Vite", "Three.js", "ESP32", "No WebMCP"],
+    tech: ["Vite", "Three.js", "ESP32", "WebMCP"],
     featured: true,
   },
   {
     id: "robobuddy-ide",
     name: "RoboBuddy IDE",
-    tagline: "Python programming and 3D simulation for educational robotics workflows.",
+    tagline: "Python programming, 3D simulation, and WebMCP agent collaboration for educational robotics.",
     description:
-      "A VS Code-inspired browser IDE for programming and inspecting SO-101, OpenArm, LeKiwi, Unitree G1, and MicroDuck learning scenarios. WebMCP Agent Assist provides bounded task, workspace, and simulation inspection plus run and focus tools; it does not write source code or control physical hardware.",
+      "A VS Code-inspired browser IDE for programming and inspecting SO-101, OpenArm, LeKiwi, Unitree G1, and MicroDuck learning scenarios. WebMCP is currently enabled through Agent Assist, providing bounded task, workspace, and simulation inspection plus run and focus tools; it does not write source code or control physical hardware.",
     domain: "robotics",
     status: "live",
     links: {
